@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - UmbraGreet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html"><img src="logo.png" alt="UmbraGreet Logo" class="logo"></a>
+        <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="index.html#setup">Setup</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="https://softvionix.com" target="_blank" class="softvionix-btn">Softvionix</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Terms of Service</h1>
+        <p>By using UmbraGreet, you agree to the following terms.</p>
+    </header>
+
+    <!-- Terms of Service Content -->
+    <main class="content">
+        <section>
+            <h2>1. Introduction</h2>
+            <p>Welcome to UmbraGreet! These Terms of Service govern your use of the UmbraGreet Discord bot. By inviting and using this bot, you accept these terms in full.</p>
+        </section>
+
+        <section>
+            <h2>2. General Usage</h2>
+            <p>UmbraGreet is a Discord bot designed to enhance community engagement and moderation by providing a structured user introduction system and command restriction features. The bot allows users to introduce themselves using /intro, storing details like name, age, hobbies, and traits for easy retrieval via /get_info. Administrators can manage bot permissions using /allow and /disallow, ensuring that commands work only in designated channels. This functionality is particularly useful for servers that wish to maintain organized discussions and controlled command usage. The bot also automates moderation tasks, ensuring compliance with server rules while allowing admins to customize which commands are available. All user profile data is stored securely in a local SQLite database, but data loss may occur during major bot updates, as the database may reset. The bot is regularly updated to improve performance, add new features, and enhance security, ensuring a smooth and efficient experience for Discord communities.</p>
+        </section>
+
+        <section>
+            <h2>3. Bot Commands & Permissions</h2>
+            <ul>
+                <li><strong>/intro</strong>: Allows users to introduce themselves.</li>
+                <li><strong>/get_info</strong>: Retrieves user profile information.</li>
+                <li><strong>/allow</strong>: Enables commands in specific channels.</li>
+                <li><strong>/disallow</strong>: Disables commands in specific channels.</li>
+            </ul>
+            <p>Only administrators can modify command restrictions.</p>
+        </section>
+
+        <section>
+            <h2>4. Data Collection & Privacy</h2>
+            <p>UmbraGreet values user privacy and is designed to operate with minimal data collection. The bot only stores essential user profile information provided through the /intro command, including name, nickname, age, gender, country, hobbies, traits, and additional details, which are stored within the Discord server’s database for easy retrieval via /get_info. No personally identifiable information (PII) is collected, and the bot does not track, analyze, or share user data outside of the server. The data is stored locally in an SQLite database, ensuring that it remains confined to the server where the bot is used. Additionally, UmbraGreet does not monitor private messages, voice channels, or any other Discord activities beyond the interactions initiated through its commands. While the bot aims to maintain data integrity, periodic updates or major bot revisions may require database resets, which could lead to loss of stored profiles, and Softvionix holds no responsibility for lost data due to such updates. Users should be aware that Discord server administrators have control over bot data and may delete or reset stored user information at their discretion. By using UmbraGreet, users acknowledge and agree to these data practices, ensuring transparency and trust in how their information is handled.</p>
+        </section>
+
+        <section>
+            <h2>5. Bot Availability & Updates</h2>
+            <p>The **Bot Availability & Updates** section should explain that UmbraGreet is constantly evolving with new features, bug fixes, and security improvements. The bot may receive automatic updates, which could introduce new functionalities or modify existing ones to enhance user experience. However, during major updates, some downtime may occur while the new version is deployed. In rare cases, stored data in the database might be reset, resulting in the loss of user profiles and command restrictions. Softvionix does not take responsibility for any lost data due to updates, and it is recommended that server admins periodically save important user information externally if necessary. Additionally, users should stay informed about upcoming changes by checking the official Softvionix website or community announcements. While we strive to maintain continuous availability, technical issues, maintenance, or external factors like Discord API changes may temporarily affect the bot’s performance. In such cases, we work diligently to restore functionality as soon as possible.</p>
+        </section>
+
+        <section>
+            <h2>6. Limitation of Liability</h2>
+            <p>The **Limitation of Liability** section should clearly state that **Softvionix and the developers of UmbraGreet** are not responsible for any issues, damages, or losses that may occur from using the bot. This includes **but is not limited to** data loss due to database resets during updates, unintended bot behavior, moderation errors, server disruptions, conflicts arising from bot actions, or security vulnerabilities caused by improper usage. The bot is provided **"as is"** without any guarantees of uninterrupted service, accuracy, or error-free functionality. Users and server administrators are responsible for **properly configuring** the bot and ensuring that it aligns with their server rules and requirements. By using UmbraGreet, users **agree to use the bot at their own risk** and acknowledge that **Softvionix is not liable** for any direct, indirect, incidental, or consequential damages resulting from the bot’s use or failure. Additionally, the bot may integrate third-party APIs (such as MyAnimeList) to fetch data, and Softvionix is **not responsible** for any inaccuracies, service downtimes, or content changes from those external sources.</p>
+        </section>
+
+        <section>
+            <h2>7. Changes to Terms</h2>
+            <p>The "Changes to Terms" section should explain that the company Softvionix reserves the right to update or modify the Terms of Service at any time to reflect changes in the bot’s functionality, security policies, or compliance with Discord’s regulations. Users will be notified of significant changes through official channels such as the website, Discord announcements, or update logs. Continued use of the bot after an update implies acceptance of the revised terms. If users disagree with any modifications, they should discontinue using the bot. Additionally, updates may introduce new features, remove outdated ones, or adjust bot permissions, and it is the user’s responsibility to stay informed about such changes.</p>
+        </section>
+        <div class="notice-box">
+            ⚠️ Important Notice:  
+            Some updates to the bot may reset the database, causing stored user data to be erased.  
+            The company **Softvionix** does not take responsibility for any lost data.
+        </div>        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 UmbraGreet | Powered by Softvionix</p>
+        <a href="terms.html">Terms of Service</a> | 
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="contact.html">Contact Us</a> | 
+        <a href="updates.html">Upcoming Updates</a>
+    </footer>
+
+</body>
+</html>

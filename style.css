@@ -1,0 +1,277 @@
+/* General Styling */
+body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+nav .logo {
+    width: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ff00;
+}
+
+/* Softvionix Button */
+.softvionix-btn {
+    background: #4b0082;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.softvionix-btn:hover {
+    background: #00ff00;
+    color: black;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #000000, #0b3d91, #4b0082);
+    padding: 50px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #00ff00;
+}
+
+header p {
+    font-size: 18px;
+    color: #ff0000;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: white;
+    background: #4b0082;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-buttons a:hover {
+    background: #00ff00;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #00ff00;
+}
+
+p {
+    font-size: 18px;
+    color: #dcdcdc;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    background: rgba(75, 0, 130, 0.8);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00ff00;
+    width: 45%;
+    text-align: center;
+}
+
+.feature img {
+    width: 300px;
+    height: 300px;
+}
+
+.feature h3 {
+    color: #ff0000;
+}
+
+/* Setup Section */
+#setup {
+    background: #111;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* General Styling */
+body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+nav .logo {
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ff00;
+}
+
+/* Softvionix Button */
+.softvionix-btn {
+    background: #4b0082;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.softvionix-btn:hover {
+    background: #00ff00;
+    color: black;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #000000, #0b3d91, #4b0082);
+    padding: 50px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 45px;
+    color: #00ff00;
+}
+
+header p {
+    font-size: 18px;
+    color: #ff0000;
+}
+
+/* Terms Page Boxed Style (WhatsApp UI) */
+.content {
+    width: 80%;
+    max-width: 800px;
+    background: rgba(20, 20, 20, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00ff00;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.content section {
+    background: rgba(30, 30, 30, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px #4b0082;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #00ff00;
+    border-bottom: 2px solid #4b0082;
+    padding-bottom: 5px;
+}
+
+.content p, .content ul {
+    font-size: 16px;
+    color: #dcdcdc;
+}
+
+/* Special Notice Box */
+.notice-box {
+    background: rgba(255, 0, 0, 0.2);
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 20px;
+    font-size: 14px;
+}
+
