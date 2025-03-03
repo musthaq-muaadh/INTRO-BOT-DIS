@@ -3,9 +3,9 @@ body {
     background-color: #0d0d0d;
     color: white;
     font-family: 'Arial', sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 /* Navbar */
@@ -13,8 +13,9 @@ nav {
     background: black;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 15px 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav .logo {
@@ -26,153 +27,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #00ff00;
-}
-
-/* Softvionix Button */
-.softvionix-btn {
-    background: #4b0082;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.softvionix-btn:hover {
-    background: #00ff00;
-    color: black;
-}
-
-/* Header */
-header {
-    background: linear-gradient(90deg, #000000, #0b3d91, #4b0082);
-    padding: 50px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 50px;
-    color: #00ff00;
-}
-
-header p {
-    font-size: 18px;
-    color: #ff0000;
-}
-
-.cta-buttons a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    font-size: 18px;
-    color: white;
-    background: #4b0082;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.cta-buttons a:hover {
-    background: #00ff00;
-}
-
-/* Sections */
-section {
-    padding: 50px;
-}
-
-h2 {
-    font-size: 30px;
-    color: #00ff00;
-}
-
-p {
-    font-size: 18px;
-    color: #dcdcdc;
-}
-
-/* Features Section */
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.feature {
-    background: rgba(75, 0, 130, 0.8);
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #00ff00;
-    width: 45%;
-    text-align: center;
-}
-
-.feature img {
-    width: 300px;
-    height: 300px;
-}
-
-.feature h3 {
-    color: #ff0000;
-}
-
-/* Setup Section */
-#setup {
-    background: #111;
-}
-
-/* Footer */
-footer {
-    background: #000;
-    padding: 20px;
-    font-size: 14px;
-}
-
-/* General Styling */
-body {
-    background-color: #0d0d0d;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
     padding: 0;
-    text-align: center;
-}
-
-/* Navbar */
-nav {
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    align-items: center;
-}
-
-nav .logo {
-    width: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
 }
 
 nav ul li {
@@ -188,6 +43,19 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #00ff00;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 /* Softvionix Button */
@@ -223,7 +91,85 @@ header p {
     color: #ff0000;
 }
 
-/* Terms Page Boxed Style (WhatsApp UI) */
+/* Responsive Header */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 35px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+}
+
+/* Sections */
+section {
+    padding: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #00ff00;
+}
+
+p {
+    font-size: 18px;
+    color: #dcdcdc;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    background: rgba(75, 0, 130, 0.8);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00ff00;
+    width: 45%;
+    text-align: center;
+}
+
+/* Responsive Features */
+@media (max-width: 768px) {
+    .feature {
+        width: 90%;
+    }
+}
+
+/* Feature Images */
+.feature img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+/* Responsive Feature Images */
+@media (max-width: 768px) {
+    .feature img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Setup Section */
+#setup {
+    background: #111;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Content Box (WhatsApp Style) */
 .content {
     width: 80%;
     max-width: 800px;
@@ -233,6 +179,14 @@ header p {
     box-shadow: 0px 0px 10px #00ff00;
     margin: 30px auto;
     text-align: left;
+}
+
+/* Responsive Content Box */
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        padding: 15px;
+    }
 }
 
 .content section {
@@ -268,10 +222,10 @@ header p {
     text-align: center;
 }
 
-/* Footer */
-footer {
-    background: #000;
-    padding: 20px;
-    font-size: 14px;
+/* Responsive Notice Box */
+@media (max-width: 768px) {
+    .notice-box {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
-
